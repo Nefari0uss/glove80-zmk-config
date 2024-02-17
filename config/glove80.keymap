@@ -34,6 +34,15 @@
             #binding-cells = <0>;
             bindings = <&mt LCTRL ESCAPE>, <&caps_word>;
         };
+
+        bksp_del: bksp_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Backspace/Del";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -108,7 +117,7 @@
 &kp TAB             &kp Q           &kp W           &kp E             &kp R        &kp T                                                                      &kp Y   &kp U        &kp I         &kp O            &kp P            &kp BSLH
 &esc_lctrl_capword  &lt 1 A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G                                                                      &kp H   &mt RCTRL J  &mt RSHIFT K  &mt RIGHT_ALT L  &lt 1 SEMICOLON  &kp SQT
 &kp GRAVE           &mt LEFT_WIN Z  &kp X           &kp C             &kp V        &kp B   &kp LSHFT  &kp LCTRL  &layer_td    &kp LGUI  &kp RCTRL  &kp RSHFT  &kp N   &kp M        &kp COMMA     &kp DOT          &mt RMETA FSLH   &kp PG_UP
-&mo 3               &kp TILDE       &kp END         &kp LEFT          &kp RIGHT            &kp BSPC   &kp DEL    &kp LALT     &kp RALT  &kp RET    &kp SPACE          &kp UP       &kp DOWN      &kp LBKT         &kp UNDERSCORE   &kp PG_DN
+&mo 3               &kp TILDE       &kp END         &kp LEFT          &kp RIGHT            &kp BSPC   &bksp_del  &kp LALT     &kp RALT  &kp RET    &kp SPACE          &kp UP       &kp DOWN      &kp LBKT         &kp UNDERSCORE   &kp PG_DN
             >;
         };
 
