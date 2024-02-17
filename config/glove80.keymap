@@ -60,6 +60,34 @@
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
+
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "ARROW";
+        };
+
+        arrow2: arrow2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "ARROW2";
+        };
+
+        double_colon: double_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp COLON>;
+            label = "DOUBLE_COLON";
+        };
+
+        nullish_coalishing_op: nullish_coalishing_op {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK &kp DOT>;
+            label = "NULLISH_COALISHING_OP";
+        };
     };
 
     keymap {
@@ -75,12 +103,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&mo 3               &kp F2          &kp F3          &kp F4            &kp F5                                                                                          &kp F6       &kp F7        &kp F8           &kp F9           &kp F10
-&kp EQUAL           &kp N1          &kp N2          &kp N3            &kp N4       &kp N5                                                                     &kp N6  &kp N7       &kp N8        &kp N9           &kp N0           &kp MINUS
+&kp F1              &kp F2          &kp F3          &kp F4            &kp F5                                                                                          &kp F6       &kp F7        &kp F8           &kp F9           &kp F10
+&mo 3               &kp N1          &kp N2          &kp N3            &kp N4       &kp N5                                                                     &kp N6  &kp N7       &kp N8        &kp N9           &kp N0           &kp MINUS
 &kp TAB             &kp Q           &kp W           &kp E             &kp R        &kp T                                                                      &kp Y   &kp U        &kp I         &kp O            &kp P            &kp BSLH
 &esc_lctrl_capword  &lt 1 A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G                                                                      &kp H   &mt RCTRL J  &mt RSHIFT K  &mt RIGHT_ALT L  &lt 1 SEMICOLON  &kp SQT
 &kp GRAVE           &mt LEFT_WIN Z  &kp X           &kp C             &kp V        &kp B   &kp LSHFT  &kp LCTRL  &layer_td    &kp LGUI  &kp RCTRL  &kp RSHFT  &kp N   &kp M        &kp COMMA     &kp DOT          &mt RMETA FSLH   &kp PG_UP
-&mo 3               &kp HOME        &kp END         &kp LEFT          &kp RIGHT            &kp BSPC   &kp DEL    &kp LALT     &kp RALT  &kp RET    &kp SPACE          &kp UP       &kp DOWN      &kp LBKT         &kp RBKT         &kp PG_DN
+&mo 3               &kp TILDE       &kp END         &kp LEFT          &kp RIGHT            &kp BSPC   &kp DEL    &kp LALT     &kp RALT  &kp RET    &kp SPACE          &kp UP       &kp DOWN      &kp LBKT         &kp UNDERSCORE   &kp PG_DN
             >;
         };
 
