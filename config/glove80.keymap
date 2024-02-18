@@ -43,6 +43,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        capsword_mod: capsword_mod {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPSWORD_MOD";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE BACKSPACE DELETE MINUS KP_MINUS>;
+        };
     };
 
     macros {
@@ -123,12 +130,12 @@
 
         Symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans           &trans          &trans                &trans                 &trans                                                                                      &trans  &trans  &trans  &trans  &trans
+&trans           &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI         &kp COMMA                                                        &trans    &trans  &trans  &trans  &trans  &trans
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE  &kp LS(QMARK)                                                    &kp SEMI  &trans  &trans  &trans  &trans  &trans
+&trans           &trans          &trans                &trans                 &trans           &trans                                                           &kp DOT   &trans  &trans  &trans  &trans  &trans
+&trans           &trans          &trans                &trans                 &trans           &trans         &trans  &trans  &trans    &trans  &trans  &trans  &kp FSLH  &trans  &trans  &trans  &trans  &trans
+&trans           &trans          &trans                &trans                 &trans                          &trans  &trans  &trans    &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -151,6 +158,17 @@
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                     &none  &none  &none  &none  &none  &bootloader
 &sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none           &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
 &none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB    &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+        };
+
+        Typing {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
