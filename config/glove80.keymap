@@ -25,7 +25,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 9>, <&to 9>;
+            bindings = <&mo 8>, <&to 8>;
         };
 
         esc_lctrl_capword: esc_lctrl_capword {
@@ -120,11 +120,11 @@
 
             bindings = <
 &kp F1                       &kp F2      &kp F3          &kp F4            &kp F5                                                                                          &kp F6       &kp F7        &kp F8           &kp F9              &kp F10
-&mo 11                       &kp N1      &kp N2          &kp N3            &kp N4       &kp N5                                                                     &kp N6  &kp N7       &kp N8        &kp N9           &kp N0              &kp MINUS
+&mo 10                       &kp N1      &kp N2          &kp N3            &kp N4       &kp N5                                                                     &kp N6  &kp N7       &kp N8        &kp N9           &kp N0              &kp MINUS
 &kp TAB                      &kp Q       &kp W           &kp E             &kp R        &kp T                                                                      &kp Y   &kp U        &kp I         &kp O            &kp P               &kp BSLH
 &esc_lctrl_capword           &mt LWIN A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G                                                                      &kp H   &mt RCTRL J  &mt RSHIFT K  &mt RIGHT_ALT L  &mt RWIN SEMICOLON  &kp SQT
 &mt LSHIFT LEFT_PARENTHESIS  &kp Z       &kp X           &kp C             &kp V        &kp B   &kp LSHFT  &kp LCTRL  &layer_td    &kp LGUI  &kp RCTRL  &kp RSHFT  &kp N   &kp M        &kp COMMA     &kp DOT          &kp SLASH           &mt RSHIFT RPAR
-&mo 11                       &kp TILDE   &kp END         &kp LEFT          &kp RIGHT            &kp SPACE  &bksp_del  &sl 1        &sl 1     &kp TAB    &kp ENTER          &kp UP       &kp DOWN      &kp LBKT         &kp UNDERSCORE      &kp PG_DN
+&mo 10                       &kp TILDE   &kp END         &kp LEFT          &kp RIGHT            &kp SPACE  &bksp_del  &sl 1        &sl 1     &kp TAB    &kp ENTER          &kp UP       &kp DOWN      &kp LBKT         &kp UNDERSCORE      &kp PG_DN
             >;
         };
 
@@ -135,7 +135,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &tog 6  &tog 5  &to 4     &trans  &trans  &tog 7  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &tog 9  &tog 3  &trans    &trans  &trans  &tog 2          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &tog 8  &tog 3  &trans    &trans  &trans  &tog 2          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -157,18 +157,18 @@
 &capsword_mod  &kp X           &kp A     &kp B      &kp C      &kp RET                                                                 &kp PERCENT  &kp N7      &kp N8     &kp N9       &kp COLON        &kp K
 &kp LCTRL      &kp LGUI        &kp LALT  &kp LSHFT  &kp LCTRL  &kp TAB                                                                 &kp PLUS     &kp N4      &kp N5     &kp N6       &kp MINUS        &kp J
 &trans         &trans          &trans    &trans     &kp BSPC   &kp SPACE  &trans  &trans  &trans    &kp LS(LT)  &kp LS(GT)  &kp EQUAL  &kp STAR     &kp N1      &kp N2     &kp N3       &kp FSLH         &kp G
-&trans         &trans          &trans    &trans     &kp DEL               &trans  &trans  &trans    &kp COMMA   &kp DOT     &kp N0                  &trans      &kp LBKT   &kp RBKT     &trans           &kp TILDE
+&trans         &trans          &trans    &trans     &kp DEL               &trans  &trans  &to 0     &kp COMMA   &kp DOT     &kp N0                  &trans      &kp LBKT   &kp RBKT     &trans           &kp TILDE
             >;
         };
 
         Typing {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans  &trans  &trans                                                                                &trans  &trans     &trans    &trans    &trans
+&kp EQUAL  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5                                                                &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &trans
+&kp GRAVE  &kp Q      &kp W   &kp E   &kp R   &kp T                                                                 &kp Y   &kp U   &kp I      &kp O     &kp P     &kp MINUS
+&kp CAPS   &kp A      &kp S   &kp D   &kp F   &kp G                                                                 &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X   &kp C   &kp V   &kp B   &kp ESC    &kp LEFT  &kp RIGHT    &kp DOWN  &kp UP   &trans   &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&trans     &kp GRAVE  &trans  &trans  &trans          &kp SPACE  &kp BSPC  &trans       &trans    &kp TAB  &kp RET          &trans  &kp LBKT   &kp RBKT  &trans    &trans
             >;
         };
 
@@ -185,27 +185,16 @@
 
         Function {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                                            &trans                    &trans                &trans                &trans                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                                            &trans  &trans                    &trans                &trans                &trans                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                                            &trans  &kp F7                    &kp F8                &kp F9                &kp F10                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                                            &trans  &kp F4                    &kp F5                &kp F6                &kp F11                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans             &trans           &trans  &kp F1                    &kp F2                &kp F3                &kp F12                   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP          &kp C_BRIGHTNESS_MAXIMUM  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_AUTO
             >;
         };
 
         System {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        World {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
