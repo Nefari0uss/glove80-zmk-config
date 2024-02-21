@@ -130,12 +130,12 @@
 
         Symbols {
             bindings = <
-&trans           &trans          &trans                &trans                 &trans                                                                                             &trans  &trans  &trans  &trans  &trans
-&trans           &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI          &kp COMMA                                                              &trans    &trans  &trans  &trans  &trans  &trans
-&kp EXCLAMATION  &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION                                                           &kp SEMI  &trans  &trans  &trans  &trans  &trans
-&kp POUND        &kp CARET       &kp EQUAL             &kp UNDER              &kp DOLLAR        &kp ASTRK                                                              &kp DOT   &trans  &trans  &trans  &trans  &trans
-&kp AT           &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp FSLH      &kp BACKSLASH  &trans  &trans    &trans  &trans  &trans  &kp FSLH  &trans  &trans  &trans  &trans  &trans
-&kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &trans         &trans  &trans    &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+&trans           &trans          &trans                &trans                 &trans                                                                                                        &trans                &trans       &trans     &trans                 &trans
+&trans           &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI          &kp COMMA                                                                         &trans    &trans                &trans       &trans     &trans                 &trans
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION                                                                      &kp SEMI  &kp RCTRL             &kp RSHFT    &kp RALT   &kp RWIN               &trans
+&kp POUND        &kp CARET       &kp EQUAL             &kp UNDER              &kp DOLLAR        &kp ASTRK                                                                         &kp DOT   &kp BSPC              &kp TAB      &kp SPACE  &kp RET                &trans
+&kp AT           &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp FSLH      &kp BACKSLASH  &kp PERIOD  &kp STAR         &trans  &trans  &trans  &kp FSLH  &kp DEL               &kp LS(TAB)  &trans     &trans                 &trans
+&kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &kp PERCENT    &kp COLON   &kp SEMICOLON    &trans  &trans  &trans            &kp LEFT_PARENTHESIS  &kp LBKT     &kp RBKT   &kp RIGHT_PARENTHESIS  &trans
             >;
         };
 
