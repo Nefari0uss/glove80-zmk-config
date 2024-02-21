@@ -130,12 +130,12 @@
 
         Symbols {
             bindings = <
-&trans           &trans          &trans                &trans                 &trans                                                                                      &trans  &trans  &trans  &trans  &trans
-&trans           &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI         &kp COMMA                                                        &trans    &trans  &trans  &trans  &trans  &trans
-&kp EXCLAMATION  &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE  &kp LS(QMARK)                                                    &kp SEMI  &trans  &trans  &trans  &trans  &trans
-&trans           &trans          &trans                &trans                 &trans           &trans                                                           &kp DOT   &trans  &trans  &trans  &trans  &trans
-&trans           &trans          &trans                &trans                 &trans           &trans         &trans  &trans  &trans    &trans  &trans  &trans  &kp FSLH  &trans  &trans  &trans  &trans  &trans
-&trans           &trans          &trans                &trans                 &trans                          &trans  &trans  &trans    &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+&trans           &trans          &trans                &trans                 &trans                                                                                             &trans  &trans  &trans  &trans  &trans
+&trans           &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI          &kp COMMA                                                              &trans    &trans  &trans  &trans  &trans  &trans
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION                                                           &kp SEMI  &trans  &trans  &trans  &trans  &trans
+&kp POUND        &kp CARET       &kp EQUAL             &kp UNDER              &kp DOLLAR        &kp ASTRK                                                              &kp DOT   &trans  &trans  &trans  &trans  &trans
+&kp AT           &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp FSLH      &kp BACKSLASH  &trans  &trans    &trans  &trans  &trans  &kp FSLH  &trans  &trans  &trans  &trans  &trans
+&kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &trans         &trans  &trans    &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
             >;
         };
 
